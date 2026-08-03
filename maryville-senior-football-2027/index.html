@@ -1,1 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Maryville Senior Football 2027 | KBAM</title>
+<meta name="description" content="KBAM Maryville football collection preview">
+<style>
+:root{
+  --black:#070708;
+  --charcoal:#151519;
+  --red:#c8102e;
+  --red-bright:#ef233c;
+  --white:#ffffff;
+  --paper:#f5f5f6;
+  --muted:#a7a7ad;
+  --line:rgba(255,255,255,.12);
+  --shadow:0 24px 60px rgba(0,0,0,.25);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  background:var(--paper);
+  color:#111;
+}
+a{text-decoration:none;color:inherit}
+.site-header{
+  position:sticky;top:0;z-index:20;
+  background:rgba(255,255,255,.94);
+  backdrop-filter:blur(14px);
+  border-bottom:1px solid #e5e5e8;
+}
+.header-inner{
+  max-width:1240px;margin:auto;padding:14px 22px;
+  display:flex;align-items:center;justify-content:space-between;gap:20px;
+}
+.brand{
+  display:flex;align-items:center;gap:13px;
+}
+.brand-mark{
+  width:48px;height:48px;border-radius:14px;
+  display:grid;place-items:center;
+  background:var(--black);color:#fff;font-size:25px;font-weight:950;
+  box-shadow:0 10px 25px rgba(0,0,0,.18);
+}
+.brand-copy strong{display:block;font-size:18px;letter-spacing:.08em}
+.brand-copy small{display:block;color:#666;margin-top:2px}
+.preview-pill{
+  font-size:12px;font-weight:900;letter-spacing:.12em;
+  background:#fff1f3;color:#a70e26;border:1px solid #ffd0d8;
+  padding:9px 12px;border-radius:999px;
+}
+.hero{
+  position:relative;overflow:hidden;
+  min-height:650px;
+  color:#fff;
+  display:flex;align-items:center;
+  background:
+    radial-gradient(circle at 80% 22%,rgba(239,35,60,.24),transparent 26%),
+    radial-gradient(circle at 18% 82%,rgba(200,16,46,.18),transparent 30%),
+    repeating-linear-gradient(45deg,rgba(255,255,255,.025) 0 1px,transparent 1px 6px),
+    linear-gradient(115deg,#050506 0%,#111115 58%,#070708 100%);
+}
+.hero:before{
+  content:"";position:absolute;inset:0;
+  background:
+    linear-gradient(90deg,rgba(0,0,0,.05),rgba(0,0,0,.35)),
+    repeating-linear-gradient(-45deg,transparent 0 14px,rgba(255,255,255,.018) 14px 15px);
+}
+.hero-inner{
+  position:relative;z-index:2;
+  width:min(1240px,100%);margin:auto;padding:86px 22px;
+  display:grid;grid-template-columns:minmax(0,1.1fr) minmax(330px,.75fr);gap:56px;align-items:center;
+}
+.eyebrow{
+  color:#ff6579;font-size:13px;font-weight:900;letter-spacing:.22em;margin:0 0 18px;
+}
+.hero h1{
+  margin:0;
+  font-size:clamp(52px,8vw,102px);
+  line-height:.88;
+  letter-spacing:-.06em;
+  text-transform:uppercase;
+  max-width:900px;
+}
+.hero h1 span{color:var(--red-bright)}
+.hero-lead{
+  font-size:clamp(18px,2.1vw,24px);line-height:1.6;color:#dedee3;
+  max-width:720px;margin:28px 0 0;
+}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:34px}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;
+  min-height:52px;padding:0 22px;border-radius:12px;
+  font-weight:900;border:1px solid transparent;cursor:pointer;
+}
+.btn-primary{background:var(--red);color:#fff;box-shadow:0 14px 34px rgba(200,16,46,.32)}
+.btn-secondary{border-color:rgba(255,255,255,.24);color:#fff;background:rgba(255,255,255,.05)}
+.info-panel{
+  background:rgba(255,255,255,.07);
+  border:1px solid rgba(255,255,255,.15);
+  border-radius:24px;padding:26px;
+  box-shadow:var(--shadow);
+  backdrop-filter:blur(12px);
+}
+.info-panel h2{margin:0 0 18px;font-size:25px}
+.info-row{
+  padding:15px 0;border-top:1px solid var(--line);
+  display:grid;grid-template-columns:130px 1fr;gap:12px;
+}
+.info-row:first-of-type{border-top:0}
+.info-row strong{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:#ff8b99}
+.info-row span{color:#f4f4f6;line-height:1.45}
+.notice{
+  max-width:1240px;margin:-34px auto 0;position:relative;z-index:5;padding:0 22px;
+}
+.notice-inner{
+  background:#fff;border-radius:20px;box-shadow:0 18px 48px rgba(0,0,0,.13);
+  display:grid;grid-template-columns:repeat(4,1fr);overflow:hidden;border:1px solid #eee;
+}
+.notice-item{padding:24px;border-right:1px solid #eee}
+.notice-item:last-child{border-right:0}
+.notice-item strong{display:block;font-size:13px;text-transform:uppercase;letter-spacing:.1em;color:var(--red)}
+.notice-item span{display:block;margin-top:7px;line-height:1.45;font-weight:750}
+.section{max-width:1240px;margin:auto;padding:82px 22px}
+.section-head{
+  display:flex;justify-content:space-between;gap:25px;align-items:end;margin-bottom:30px;
+}
+.section-head p{margin:0 0 8px;color:var(--red);font-weight:900;letter-spacing:.16em;font-size:12px}
+.section-head h2{margin:0;font-size:clamp(34px,5vw,58px);letter-spacing:-.045em}
+.section-head .sub{max-width:480px;color:#64646c;line-height:1.6}
+.category-tabs{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:28px}
+.category-tabs span{
+  background:#fff;border:1px solid #dedee3;padding:10px 14px;border-radius:999px;font-size:13px;font-weight:850;
+}
+.product-grid{
+  display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;
+}
+.product-card{
+  background:#fff;border:1px solid #e5e5e8;border-radius:20px;overflow:hidden;
+  box-shadow:0 8px 24px rgba(0,0,0,.055);
+  transition:transform .2s ease,box-shadow .2s ease;
+}
+.product-card:hover{transform:translateY(-4px);box-shadow:0 18px 38px rgba(0,0,0,.11)}
+.product-art{
+  aspect-ratio:1.2/1;
+  display:flex;align-items:center;justify-content:center;text-align:center;padding:28px;
+  color:#fff;
+  background:
+    radial-gradient(circle at 78% 18%,rgba(239,35,60,.5),transparent 27%),
+    repeating-linear-gradient(45deg,rgba(255,255,255,.025) 0 1px,transparent 1px 7px),
+    linear-gradient(135deg,#09090b,#202026);
+}
+.product-art .number{font-size:64px;font-weight:950;letter-spacing:-.08em;color:#fff;opacity:.95}
+.product-art .art-label{display:block;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:#ff9caa;margin-top:6px}
+.product-body{padding:20px}
+.product-type{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--red);font-weight:900}
+.product-body h3{font-size:21px;margin:8px 0 10px;line-height:1.15}
+.product-body p{margin:0;color:#65656d;line-height:1.55;font-size:14px;min-height:64px}
+.product-meta{display:flex;justify-content:space-between;align-items:end;gap:12px;margin-top:18px}
+.price{font-size:22px;font-weight:950}
+.tag{font-size:11px;font-weight:900;background:#f2f2f4;border-radius:999px;padding:7px 9px;color:#444}
+.personalization{
+  background:var(--black);color:#fff;
+}
+.personalization .section-head .sub{color:#c4c4ca}
+.upgrade-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.upgrade{
+  border:1px solid rgba(255,255,255,.13);
+  background:rgba(255,255,255,.055);border-radius:18px;padding:22px;
+}
+.upgrade strong{font-size:20px}
+.upgrade .cost{display:block;margin-top:12px;color:#ff788a;font-size:28px;font-weight:950}
+.upgrade p{color:#c8c8ce;line-height:1.5;margin-bottom:0}
+.footer{background:#050506;color:#fff;padding:38px 22px}
+.footer-inner{max-width:1240px;margin:auto;display:flex;justify-content:space-between;gap:25px;align-items:center}
+.footer p{color:#aaaab2;margin:6px 0 0}
+.footer small{color:#8d8d95}
+@media(max-width:920px){
+  .hero-inner{grid-template-columns:1fr}
+  .info-panel{max-width:650px}
+  .notice-inner{grid-template-columns:repeat(2,1fr)}
+  .notice-item:nth-child(2){border-right:0}
+  .notice-item:nth-child(-n+2){border-bottom:1px solid #eee}
+  .product-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .upgrade-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:620px){
+  .header-inner{padding:10px 14px}
+  .brand-copy small{display:none}
+  .hero{min-height:auto}
+  .hero-inner{padding:62px 16px 78px}
+  .hero h1{font-size:clamp(46px,15vw,68px)}
+  .notice{padding:0 12px}
+  .notice-inner{grid-template-columns:1fr}
+  .notice-item{border-right:0;border-bottom:1px solid #eee}
+  .notice-item:last-child{border-bottom:0}
+  .section{padding:62px 16px}
+  .section-head{display:block}
+  .section-head .sub{margin-top:14px}
+  .product-grid{grid-template-columns:1fr}
+  .upgrade-grid{grid-template-columns:1fr}
+  .footer-inner{display:block}
+}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <div class="brand">
+      <div class="brand-mark">K</div>
+      <div class="brand-copy">
+        <strong>KBAM</strong>
+        <small>Built by Family. Worn with Pride.</small>
+      </div>
+    </div>
+    <div class="preview-pill">PRIVATE PREVIEW</div>
+  </div>
+</header>
+<main>
+<section class="hero">
+  <div class="hero-inner">
+    <div>
+      <p class="eyebrow">KBAM × MARYVILLE</p>
+      <h1>Senior Football <span>2027</span></h1>
+      <p class="hero-lead">A premium, personalized collection created exclusively for Maryville’s Class of 2027 football families.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#products">Preview Products</a>
+        <a class="btn btn-secondary" href="#personalization">View Personalization</a>
+      </div>
+    </div>
+    <aside class="info-panel">
+      <h2>Store Details</h2>
+      <div class="info-row"><strong>Order deadline</strong><span>August 8 — may be extended</span></div><div class="info-row"><strong>Delivery</strong><span>Approximately two weeks after the store closes</span></div><div class="info-row"><strong>Pickup</strong><span>Delivered to school or available at a game</span></div><div class="info-row"><strong>Personalization</strong><span>Player name, number, graduation year, and family wording</span></div>
+    </aside>
+  </div>
+</section>
+<div class="notice">
+  <div class="notice-inner"><div class="notice-item"><strong>Senior Exclusive</strong><span>Built for the Class of 2027</span></div><div class="notice-item"><strong>Made to Order</strong><span>Produced after the store closes</span></div><div class="notice-item"><strong>Personalized</strong><span>Review spelling before submitting</span></div><div class="notice-item"><strong>Preview Status</strong><span>Artwork and final options are being loaded</span></div></div>
+</div>
+<section class="section" id="products">
+  <div class="section-head">
+    <div>
+      <p>PREVIEW THE COLLECTION</p>
+      <h2>Senior Football Products</h2>
+    </div>
+    <div class="sub">This preview shows the product architecture, pricing, and shopping experience. Final artwork will replace the placeholders as files are added.</div>
+  </div>
+  <div class="category-tabs"><span>Featured</span><span>Senior Apparel</span><span>Family Collection</span><span>Personalized Shirseys</span><span>Home &amp; Yard</span><span>Auto &amp; Accessories</span></div>
+  <div class="product-grid">
+    
+        <article class="product-card">
+          <div class="product-art">
+            <div>
+              <div class="number">27</div>
+              <span class="art-label">Artwork Preview Coming</span>
+            </div>
+          </div>
+          <div class="product-body">
+            <div class="product-type">Senior Apparel</div>
+            <h3>Senior Roster Tee — District DT6000</h3>
+            <p>Premium front-and-back senior roster graphics. Black only.</p>
+            <div class="product-meta">
+              <div class="price">$30</div>
+              <div class="tag">Preview</div>
+            </div>
+          </div>
+        </article>
+        
 
+        <article class="product-card">
+          <div class="product-art">
+            <div>
+              <div class="number">27</div>
+              <span class="art-label">Artwork Preview Coming</span>
+            </div>
+          </div>
+          <div class="product-body">
+            <div class="product-type">Senior Apparel</div>
+            <h3>Senior Roster Tee — Comfort Colors 1717</h3>
+            <p>Heavyweight garment-dyed cotton with premium front-and-back roster graphics.</p>
+            <div class="product-meta">
+              <div class="price">$33</div>
+              <div class="tag">Preview</div>
+            </div>
+          </div>
+        </article>
+        
+
+        <article class="product-card">
+          <div class="product-art">
+            <div>
+              <div class="number">27</div>
+              <span class="art-label">Artwork Preview Coming</span>
+            </div>
+          </div>
+          <div class="product-body">
+            <div class="product-type">Performance</div>
+            <h3>Senior Roster Performance Tee</h3>
+            <p>Sport-Tek moisture-wicking performance tee with front-and-back graphics.</p>
+            <div class="product-meta">
+              <div class="price">$32</div>
+              <div class="tag">Preview</div>
+            </div>
+          </div>
+        </article>
+        
+
+        <article class="product-card">
+          <div class="product-art">
+            <div>
+              <div class="number">MOM</div>
+              <span class="art-label">Artwork Preview Coming</span>
+            </div>
+          </div>
+          <div class="product-body">
+            <div class="product-type">Family Collection</div>
+            <h3>Family Collection Tee — District</h3>
+            <p>Choose a front logo style, relationship title, and coordinating back design.</p>
+            <div class="product-meta">
+              <div class="price">$25</div>
+              <div class="tag">Preview</div>
+            </div>
+          </div>
+        </article>
+        
+
+        <article class="product-card">
+          <div class="product-art">
+            <div>
+              <div class="number">FAM</div>
+              <span class="art-label">Artwork Preview Coming</span>
+            </div>
+          </div>
+          <div class="product-body">
+            <div class="product-type">Family Collection</div>
+            <h3>Family Collection Tee — Comfort Colors</h3>
+            <p>Premium heavyweight family supporter shirt with custom relationship wording.</p>
+            <div class="product-meta">
+              <div class="price">$28</div>
+              <div class="tag">Preview</div>
+            </div>
+          </div>
+        </article>
+        
+
+        <article class="product-card">
+          <div class="product-art">
+            <div>
+              <div class="number">DAD</div>
+              <span class="art-label">Artwork Preview Coming</span>
+            </div>
+          </div>
+          <div class="product-body">
+            <div class="product-type">Family Collection</div>
+            <h3>Family Performance Tee</h3>
+            <p>Moisture-wicking family collection tee with custom front and back.</p>
+            <div class="product-meta">
+              <div class="price">$27</div>
+              <div class="tag">Preview</div>
+            </div>
+          </div>
+        </article>
+        
+
+        <article class="product-card">
+          <div class="product-art">
+            <div>
+              <div class="number">22</div>
+              <span class="art-label">Artwork Preview Coming</span>
+            </div>
+          </div>
+          <div class="product-body">
+            <div class="product-type">Personalized</div>
+            <h3>Personalized Shirsey — Comfort Colors</h3>
+            <p>Player last name and jersey number on back; choose Maryville or Rebels front detail.</p>
+            <div class="product-meta">
+              <div class="price">$22</div>
+              <div class="tag">Preview</div>
+            </div>
+          </div>
+        </article>
+        
+
+        <article class="product-card">
+          <div class="product-art">
+            <div>
+              <div class="number">22</div>
+              <span class="art-label">Artwork Preview Coming</span>
+            </div>
+          </div>
+          <div class="product-body">
+            <div class="product-type">Personalized</div>
+            <h3>Personalized Performance Shirsey</h3>
+            <p>Classic personalized shirsey on Sport-Tek performance fabric.</p>
+            <div class="product-meta">
+              <div class="price">$19</div>
+              <div class="tag">Preview</div>
+            </div>
+          </div>
+        </article>
+        
+
+        <article class="product-card">
+          <div class="product-art">
+            <div>
+              <div class="number">24</div>
+              <span class="art-label">Artwork Preview Coming</span>
+            </div>
+          </div>
+          <div class="product-body">
+            <div class="product-type">Home &amp; Yard</div>
+            <h3>18 × 24 Senior Yard Sign</h3>
+            <p>Personalize with name, number, position, photo, and graduation year.</p>
+            <div class="product-meta">
+              <div class="price">$35</div>
+              <div class="tag">Preview</div>
+            </div>
+          </div>
+        </article>
+        
+
+        <article class="product-card">
+          <div class="product-art">
+            <div>
+              <div class="number">18</div>
+              <span class="art-label">Artwork Preview Coming</span>
+            </div>
+          </div>
+          <div class="product-body">
+            <div class="product-type">Home &amp; Yard</div>
+            <h3>12 × 18 Garden Flag</h3>
+            <p>Custom senior football garden flag with player personalization.</p>
+            <div class="product-meta">
+              <div class="price">$20</div>
+              <div class="tag">Preview</div>
+            </div>
+          </div>
+        </article>
+        
+
+        <article class="product-card">
+          <div class="product-art">
+            <div>
+              <div class="number">M</div>
+              <span class="art-label">Artwork Preview Coming</span>
+            </div>
+          </div>
+          <div class="product-body">
+            <div class="product-type">Auto</div>
+            <h3>12 × 6 License Plate</h3>
+            <p>Personalized Maryville football plate with multiple design options.</p>
+            <div class="product-meta">
+              <div class="price">$20</div>
+              <div class="tag">Preview</div>
+            </div>
+          </div>
+        </article>
+        
+
+        <article class="product-card">
+          <div class="product-art">
+            <div>
+              <div class="number">M</div>
+              <span class="art-label">Artwork Preview Coming</span>
+            </div>
+          </div>
+          <div class="product-body">
+            <div class="product-type">Auto</div>
+            <h3>License Plate Frame</h3>
+            <p>Custom Maryville football frame with player-focused design options.</p>
+            <div class="product-meta">
+              <div class="price">$15</div>
+              <div class="tag">Preview</div>
+            </div>
+          </div>
+        </article>
+        
+
+        <article class="product-card">
+          <div class="product-art">
+            <div>
+              <div class="number">M</div>
+              <span class="art-label">Artwork Preview Coming</span>
+            </div>
+          </div>
+          <div class="product-body">
+            <div class="product-type">Accessories</div>
+            <h3>Football Decal</h3>
+            <p>Made for cars, water bottles, phone cases, notebooks, and more.</p>
+            <div class="product-meta">
+              <div class="price">$4</div>
+              <div class="tag">Preview</div>
+            </div>
+          </div>
+        </article>
+        
+  </div>
+</section>
+<div id="personalization">
+<section class="section personalization">
+  <div class="section-head">
+    <div>
+      <p>MAKE IT YOURS</p>
+      <h2>Personalization Options</h2>
+    </div>
+    <div class="sub">Senior products collect the information needed for production. Regular eligible tees can also offer optional back personalization.</div>
+  </div>
+  <div class="upgrade-grid">
+    <div class="upgrade"><strong>Player Name</strong><span class="cost">+$3</span><p>Add the player’s name to an eligible regular tee.</p></div>
+    <div class="upgrade"><strong>Jersey Number</strong><span class="cost">+$4</span><p>Add the player’s number to the back.</p></div>
+    <div class="upgrade"><strong>Name + Number</strong><span class="cost">+$6</span><p>Best-value personalization package.</p></div>
+    <div class="upgrade"><strong>Family Wording</strong><span class="cost">Custom</span><p>Mom, Dad, Nana, Pops, Aunt, Uncle, or custom supporter title.</p></div>
+  </div>
+</section>
+</div>
+</main>
+<footer class="footer">
+  <div class="footer-inner">
+    <div><strong>KBAM</strong><p>Premium custom merchandise for teams, schools, and families.</p></div>
+    <small>Preview only · Checkout will be enabled after final product approval.</small>
+  </div>
+</footer>
+</body>
+</html>
