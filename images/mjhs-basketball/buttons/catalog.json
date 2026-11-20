@@ -193,18 +193,28 @@
     {
       "name": "Custom Player Photo Button",
       "unitPriceCents": 1000,
-      "requiredFields": [
-        "Player first and last name"
-      ],
+      "requiredFields": [],
       "photoInstructions": "After ordering, email your player photo and KBAM order number to help@shopkbam.com.",
       "designs": [
         {
           "label": "Cursive Name",
-          "file": "Custom Cartoon with Cursive First & Last Name.png"
+          "file": "Custom Cartoon with Cursive First & Last Name.png",
+          "requiredFields": [
+            "Player first and last name"
+          ]
         },
         {
           "label": "Standard Name",
-          "file": "Custom Cartoon with First & Last Name.png"
+          "file": "Custom Cartoon with First & Last Name.png",
+          "requiredFields": [
+            "Player first and last name"
+          ]
+        },
+        {
+          "label": "Photo Only",
+          "requiredFields": [],
+          "description": "Your original photo, cropped to fit the 3-inch round button.",
+          "previewImageRequired": true
         }
       ]
     }
