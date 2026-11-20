@@ -214,7 +214,7 @@
           "label": "Photo Only",
           "requiredFields": [],
           "description": "Your original photo, cropped to fit the 3-inch round button.",
-          "previewImageRequired": true
+          "file": "Your Photo Only.png"
         }
       ]
     }
