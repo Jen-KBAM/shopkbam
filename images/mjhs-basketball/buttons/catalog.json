@@ -1,0 +1,212 @@
+{
+  "sizeInches": 3,
+  "collectionId": "COL-MJHS-LADY-REBELS-BASKETBALL-2026",
+  "products": [
+    {
+      "name": "MJHS Lady Rebels Basketball Buttons",
+      "unitPriceCents": 600,
+      "designs": [
+        {
+          "label": "Black - Everyone Watches the Lady Rebels",
+          "file": "Black - Everyone Watches the Lady Rebels.png"
+        },
+        {
+          "label": "Black - Power M Basketball Bottom",
+          "file": "Black - Power M Basketball Bottom.png"
+        },
+        {
+          "label": "Black - Power M Basketball Center",
+          "file": "Black - Power M Basketball Center.png"
+        },
+        {
+          "label": "Black - Power M Lady Rebels Center",
+          "file": "Black - Power M Lady Rebels Center.png"
+        },
+        {
+          "label": "Black - Power M Lady Rebs Basketball",
+          "file": "Black - Power M Lady Rebs Basketball.png"
+        },
+        {
+          "label": "Everyone Watches the Lady Rebels - Black",
+          "file": "Everyone Watches the Lady Rebels - Black.png"
+        },
+        {
+          "label": "Everyone Watches the Lady Rebels - White",
+          "file": "Everyone Watches the Lady Rebels - White.png"
+        },
+        {
+          "label": "Game Day Dots - Lady Rebels",
+          "file": "Game Day Dots - Lady Rebels.png"
+        },
+        {
+          "label": "Game Day Dots - M",
+          "file": "Game Day Dots - M.png"
+        },
+        {
+          "label": "Great Day to Be a Rebel - Black",
+          "file": "Great Day to Be a Rebel - Black.png"
+        },
+        {
+          "label": "Great Day to Be a Rebel - White",
+          "file": "Great Day to Be a Rebel - White.png"
+        },
+        {
+          "label": "Lady Rebels - Black",
+          "file": "Lady Rebels - Black.png"
+        },
+        {
+          "label": "Lady Rebels - Red",
+          "file": "Lady Rebels - Red.png"
+        },
+        {
+          "label": "Lady Rebels - White",
+          "file": "Lady Rebels - White.png"
+        },
+        {
+          "label": "Lady Rebels Basketball Retro - Black",
+          "file": "Lady Rebels Basketball Retro - Black.png"
+        },
+        {
+          "label": "Lady Rebels Basketball Retro - Red",
+          "file": "Lady Rebels Basketball Retro - Red.png"
+        },
+        {
+          "label": "Lady Rebels Basketball Retro - White",
+          "file": "Lady Rebels Basketball Retro - White.png"
+        },
+        {
+          "label": "Lady Rebels Basketball Simple Stack - Black",
+          "file": "Lady Rebels Basketball Simple Stack - Black.png"
+        },
+        {
+          "label": "Lady Rebels Basketball Simple Stack - White",
+          "file": "Lady Rebels Basketball Simple Stack - White.png"
+        },
+        {
+          "label": "Maryville Tri-Stripe Net - Black",
+          "file": "Maryville Tri-Stripe Net - Black.png"
+        },
+        {
+          "label": "Maryville Tri-Stripe Net - White",
+          "file": "Maryville Tri-Stripe Net - White.png"
+        },
+        {
+          "label": "My Girl Wears Red - Black",
+          "file": "My Girl Wears Red - Black.png"
+        },
+        {
+          "label": "My Girl Wears Red - Dots on White",
+          "file": "My Girl Wears Red - Dots on White.png"
+        },
+        {
+          "label": "My Girl Wears Red - Red",
+          "file": "My Girl Wears Red - Red.png"
+        },
+        {
+          "label": "My Girl Wears Red - White",
+          "file": "My Girl Wears Red - White.png"
+        },
+        {
+          "label": "NOT IN OUR HOUSE Stack - Black",
+          "file": "NOT IN OUR HOUSE Stack - Black.png"
+        },
+        {
+          "label": "NOT IN OUR HOUSE Stack - White",
+          "file": "NOT IN OUR HOUSE Stack - White.png"
+        },
+        {
+          "label": "Our House - Black",
+          "file": "Our House - Black.png"
+        },
+        {
+          "label": "Our House - White",
+          "file": "Our House - White.png"
+        },
+        {
+          "label": "Rebel Nation - Black",
+          "file": "Rebel Nation - Black.png"
+        },
+        {
+          "label": "Rebel Nation - White",
+          "file": "Rebel Nation - White.png"
+        },
+        {
+          "label": "Rebels Block with Cursive - Black",
+          "file": "Rebels Block with Cursive - Black.png"
+        },
+        {
+          "label": "Rebels Block with Cursive - Red",
+          "file": "Rebels Block with Cursive - Red.png"
+        },
+        {
+          "label": "Rebels Block with Cursive - White",
+          "file": "Rebels Block with Cursive - White.png"
+        },
+        {
+          "label": "Red - Everyone Watches the Lady Rebels",
+          "file": "Red - Everyone Watches the Lady Rebels.png"
+        },
+        {
+          "label": "Shoot Like a Lady Rebel - Black",
+          "file": "Shoot Like a Lady Rebel - Black.png"
+        },
+        {
+          "label": "Shoot Like a Lady Rebel - White",
+          "file": "Shoot Like a Lady Rebel - White.png"
+        },
+        {
+          "label": "White - Everyone Watches the Lady Rebels",
+          "file": "White - Everyone Watches the Lady Rebels.png"
+        },
+        {
+          "label": "White - Power M Basketball Bottom",
+          "file": "White - Power M Basketball Bottom.png"
+        },
+        {
+          "label": "White - Power M Basketball Center",
+          "file": "White - Power M Basketball Center.png"
+        },
+        {
+          "label": "White - Power M Lady Rebels Center",
+          "file": "White - Power M Lady Rebels Center.png"
+        },
+        {
+          "label": "White Power M Lady Rebs Basketball",
+          "file": "White Power M Lady Rebs Basketball.png"
+        }
+      ]
+    },
+    {
+      "name": "Custom Player Name & Number Button",
+      "unitPriceCents": 800,
+      "requiredFields": [
+        "Player name",
+        "Jersey number"
+      ],
+      "designs": [
+        {
+          "label": "Basketball Name & Number",
+          "file": "Basketball Custom Name & Number.png"
+        }
+      ]
+    },
+    {
+      "name": "Custom Player Photo Button",
+      "unitPriceCents": 1000,
+      "requiredFields": [
+        "Player first and last name"
+      ],
+      "photoInstructions": "After ordering, email your player photo and KBAM order number to help@shopkbam.com.",
+      "designs": [
+        {
+          "label": "Cursive Name",
+          "file": "Custom Cartoon with Cursive First & Last Name.png"
+        },
+        {
+          "label": "Standard Name",
+          "file": "Custom Cartoon with First & Last Name.png"
+        }
+      ]
+    }
+  ]
+}
